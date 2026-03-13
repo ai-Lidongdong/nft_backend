@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    // 1. 模块系统：使用 NodeNext 遵循 Node.js ESM 解析规则
+    "module": "NodeNext",
+    // 2. 模块解析方式：必须与 module 一致，支持 ESM 路径解析
+    "moduleResolution": "NodeNext",
+    // 3. 目标 JS 版本：支持现代语法（如 async/await）
+    "target": "ES2020",
+    // 4. 源码根目录（存放 TypeScript 文件）
+    "rootDir": "./src",
+    // 5. 编译输出目录（存放生成的 JS 文件）
+    "outDir": "./dist/src",
+    // 6. 启用严格模式（强制类型检查）
+    "strict": true,
+    // 7. 允许导入 JSON 文件
+    "resolveJsonModule": true,
+    // 8. 生成源映射文件（调试时关联 TS 源码）
+    "sourceMap": true,
+    // 9. 自动引入 ES 模块类型定义
+    "esModuleInterop": true,
+    // 10. 忽略库类型检查（加速编译）
+    "skipLibCheck": true,
+    // 11. 允许未声明的全局变量（如 Node.js 全局变量）
+    "verbatimModuleSyntax": true,
+    "allowUmdGlobalAccess": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  // 指定需要编译的文件（src 目录下所有 TS 文件）
+  "include": ["src/**/*"],
+  // 排除不需要编译的文件
+  "exclude": ["node_modules", "dist"],
+}
