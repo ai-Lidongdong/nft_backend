@@ -19,6 +19,9 @@ app.use(express.json()); // 解析 JSON 请求体
 // 路由配置：订单相关接口
 app.use('/api/orders', orderRoutes);
 
+console.log('DB_USER:', process.env.DB_USER);
+console.log('DB_PASS exists:', !!process.env.DB_PASS);
+console.log('DB_HOST:', process.env.DB_HOST);
 // 启动服务器并初始化服务
 const startServer = async () => {
   try {
