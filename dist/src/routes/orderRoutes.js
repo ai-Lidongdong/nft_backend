@@ -16,7 +16,7 @@ router.get('/active', async (req, res) => {
             offset // 跳过的数量（分页偏移量）
         });
         const data = await Promise.all(orders.map(async (item) => {
-            const metadata = await fetchNFTMetadata(item.cid);
+            const metadata = await fetchNFTMetadata(item?.cid);
             return {
                 ...item.dataValues,
                 nftInfo: metadata
@@ -45,7 +45,7 @@ router.get('/seller/:address', async (req, res) => {
             order: [['createdAt', 'DESC']]
         });
         const data = await Promise.all(orders.map(async (item) => {
-            const metadata = await fetchNFTMetadata(item.cid);
+            const metadata = await fetchNFTMetadata(item?.cid);
             return {
                 ...item.dataValues,
                 nftInfo: metadata

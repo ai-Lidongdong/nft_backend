@@ -358,8 +358,8 @@ const handleOrderCreated = async (eventArgs:{
     // }
     // nftDescription = metadata.description || '';
     // nftMetadataRaw = JSON.stringify(metadata); // 存储原始JSON
-  } catch (err) {
-    console.error(`获取NFT元数据失败（合约: ${nftContract}, tokenId: ${tokenIdNum}）:`, err.message);
+  } catch (err: any) {
+    console.error(`获取NFT元数据失败（合约: ${nftContract}, tokenId: ${tokenIdNum}）:`, err?.message);
     // 失败时使用默认值，不阻断订单创建
   }
 

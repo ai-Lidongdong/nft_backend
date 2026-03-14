@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev:build": "tsc --watch",
+    "build": "tsc",
     "dev:run": "nodemon dist/src/app.js",
     "dev": "concurrently \"npm run dev:build\" \"npm run dev:run\"",
     "test": "echo \"Error: no test specified\" && exit 1"

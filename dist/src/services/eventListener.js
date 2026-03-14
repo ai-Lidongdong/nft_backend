@@ -251,7 +251,7 @@ const handleOrderCreated = async (eventArgs) => {
         // nftMetadataRaw = JSON.stringify(metadata); // 存储原始JSON
     }
     catch (err) {
-        console.error(`获取NFT元数据失败（合约: ${nftContract}, tokenId: ${tokenIdNum}）:`, err.message);
+        console.error(`获取NFT元数据失败（合约: ${nftContract}, tokenId: ${tokenIdNum}）:`, err?.message);
         // 失败时使用默认值，不阻断订单创建
     }
     // 3. 存入数据库（包含元数据）
