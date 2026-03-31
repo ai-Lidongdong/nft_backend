@@ -6,8 +6,6 @@ import { sequelize } from './config/db.js';
 import { syncHistoricalEvents, listenToEvents } from './services/eventListener.js';
 // 引入订单路由（已适配 MySQL）
 import orderRoutes from './routes/orderRoutes.js';
-import * as dotEnvConfig from "dotenv";
-dotEnvConfig.config();
 // 初始化 Express 应用
 const app = express();
 // 中间件配置

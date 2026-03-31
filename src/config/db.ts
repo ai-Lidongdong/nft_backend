@@ -1,6 +1,5 @@
+import '../env.js';
 import { Sequelize } from 'sequelize';
-import * as dotEnvConfig from "dotenv";
-dotEnvConfig.config();
 
 // 初始化 Sequelize 实例
 const {DB_NAME, DB_USER, DB_PASS, DB_HOST, DB_PORT } = process.env as any;
