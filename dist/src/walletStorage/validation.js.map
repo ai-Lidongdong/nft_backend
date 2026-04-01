@@ -1,0 +1,1 @@
+{"version":3,"file":"validation.js","sourceRoot":"","sources":["../../../src/walletStorage/validation.ts"],"names":[],"mappings":"AAAA,MAAM,eAAe,GAAG,qBAAqB,CAAC;AAE9C,MAAM,UAAU,gBAAgB,CAAC,OAAe;IAC9C,OAAO,OAAO,CAAC,IAAI,EAAE,CAAC,WAAW,EAAE,CAAC;AACtC,CAAC;AAED,MAAM,UAAU,iBAAiB,CAAC,OAAe;IAC/C,OAAO,eAAe,CAAC,IAAI,CAAC,OAAO,CAAC,IAAI,EAAE,CAAC,CAAC;AAC9C,CAAC"}

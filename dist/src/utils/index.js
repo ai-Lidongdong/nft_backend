@@ -1,5 +1,4 @@
-import * as dotEnvConfig from "dotenv";
-dotEnvConfig.config();
+import '../env.js';
 // import { IPFS_GATEWAY } from '@/app/constants';
 // 从 IPFS 或 HTTP 加载 NFT 元数据，根据tokenUri 查询。tokenUri一般是 ipfs:// + 元数据的cid
 export const fetchNFTMetadata = async (tokenUri) => {

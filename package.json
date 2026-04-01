@@ -4,10 +4,12 @@
   "description": "",
   "type": "module",
   "scripts": {
+    "predev": "npm run build",
     "dev:build": "tsc --watch",
     "build": "tsc",
     "dev:run": "nodemon dist/src/app.js",
     "dev": "concurrently \"npm run dev:build\" \"npm run dev:run\"",
+    "start": "node dist/src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -17,6 +19,7 @@
     "dotenv": "^17.2.3",
     "ethers": "^6.15.0",
     "express": "^5.1.0",
+    "express-rate-limit": "^8.3.2",
     "fhevmjs": "^0.6.2",
     "mysql2": "^3.15.3",
     "sequelize": "^6.37.7"

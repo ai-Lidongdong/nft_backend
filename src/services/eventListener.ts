@@ -1,7 +1,6 @@
 import { ethers, JsonRpcProvider } from 'ethers'; // 从 ethers 库导入 Provider 和合约工具
 import Order from '../models/Order.js'; // 导入 MySQL 订单模型（Sequelize）
-import * as dotEnvConfig from "dotenv";
-dotEnvConfig.config();
+import '../env.js';
 
 // 从环境变量获取 RPC 节点地址（如 Infura/Alchemy 的测试网/主网地址）、平台合约地址
 const { RPC_URL, MARKETPLACE_ADDRESS } = process.env;
